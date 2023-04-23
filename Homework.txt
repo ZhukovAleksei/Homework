@@ -1,0 +1,29 @@
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int hours;
+        int minutes;
+        int seconds;
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("часы ");
+        hours = in.nextInt();
+
+        System.out.print("минуты ");
+        minutes = in.nextInt();
+
+        System.out.print("секунды ");
+        seconds = in.nextInt();
+
+        int sum;
+
+        sum = seconds+minutes*60+hours*3600;
+
+        System.out.println(sum+" прошло секунд с начала суток ");
+    }
+
+}
+

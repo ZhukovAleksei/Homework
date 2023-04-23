@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+        public static void main(String[] args) {
+                int h1;
+                int m1;
+                int h2;
+                int m2;
+                int difference;
+                Scanner in = new Scanner(System.in);
+                System.out.print("Время отправления (час) ");
+                h1 = in.nextInt();
+
+                System.out.print("Время отправления (минуты) ");
+                m1 = in.nextInt();
+
+                System.out.print("Время прибытия (час) ");
+                h2 = in.nextInt();
+
+                System.out.print("Время прибытия (минуты) ");
+                m2 = in.nextInt();
+
+                difference = ((h2 * 60) + m2) - ((h1 * 60) + m1);
+
+                System.out.println(difference+" минут поезд был в пути");
+        }
+
+        }
